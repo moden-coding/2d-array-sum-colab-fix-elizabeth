@@ -1,4 +1,5 @@
 public class App {
+	
 	public static void main(String[] args){
 		int[][] a = {
 			{1,2,3},
@@ -9,7 +10,14 @@ public class App {
 	}
 	
 	public static int sum2D(int[][] nums){
-		return -1;
+		int count = 0;
+		for(int j = 0; j < nums.length;j++){
+			for (int i = 0; i <nums[0].length; i++){
+				// System.out.println(nums[j][i]);
+			count += nums[j][i];
+			}
+		}
+		return count;
 	}
 	
 }
